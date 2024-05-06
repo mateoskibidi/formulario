@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+
+
+        <main>
+
+
+            <h1>Qué atributo se utiliza para especificar la URL a la que se enviarán los datos del formulario?</h1>
+
+            <p>es el atributo action.</p>
+
+            <h2>¿Cuál es el atributo que se utiliza para especificar el tipo de datos que se espera en un campo de
+                entrada? </h2>
+
+
+            <p>es type</p>
+
+            <h3>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar direcciones de correo
+                electrónico?</h3>
+
+            <p>email</p>
+
+            <h4>Cuál es el elemento HTML que se utiliza para asociar un texto descriptivo con un campo de entrada en un
+                formulario?</h4>
+            <p>es label.</p>
+
+
+            <h5>¿Cuál de las siguientes opciones es la etiqueta correcta para crear un botón de envío en un formulario?
+            </h5>
+
+
+
+            <p>submit.</p>
+
+
+            <h6>¿Cuál de los siguientes atributos se utiliza para hacer que un campo de entrada sea obligatorio en un
+                formulario?</h6>
+
+            <p>es required</p>
+
+            <p>¿Cuál de los siguientes elementos HTML se utiliza para crear una lista desplegable en un formulario?</p>
+
+            <p>es select.</p>
+
+
+            <p>¿Cuál de los siguientes tipos de campo de entrada se utiliza para ingresar un apellido?</p>
+
+            <p>es input</p>
+
+            <p>Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?
+            </p>
+
+            <p>es value.</p>
+
+
+            <p>HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un
+                recurso determinado</p>
+
+            <p><strong>ejemplo</strong> delet,put,post</p>
+
+
+            <p> Los códigos de estado de respuesta HTTP indican si se ha completado satisfactoriamente una solicitud
+                HTTP específica. Las respuestas se agrupan en cinco clases:</p>
+
+
+
+            <table>
+
+                <tr>
+                    <th>clasificacion</th>
+
+                    <th>codigo</th>
+                    <th>nombre</th>
+                    <th>descripcion</th>
+                </tr>
+                <tr>
+                    <td rowspan="4"><strong>respuesta informativa (100-103)</strong></td>
+                    <td>100</td>
+                    <td>continue</td>
+                    <td>indica que todo esta bien por ahora y el usuario puede seguir</td>
+                </tr>
+                <tr>
+                    <td>101</td>
+                    <td>switching protocol</td>
+                    <td>indica que acepto el cambio de protocolo del usuario</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>processing</td>
+                    <td>indica que el coidgo recibio una solicitud que no puede procesar</td>
+                <tr>
+                    <td>103</td>
+                    <td>early hints</td>
+                    <td>ste código de estado está pensado principalmente para ser usado con el encabezado Link, </td>
+                </tr>
+
+                <tr>
+                    <td rowspan="10"><strong>respuesta satisfactoria (200-226)</strong></td>
+                    <td>200</td>
+                    <td>ok</td>
+                    <td>la solicitud tuvo exito</td>
+                </tr>
+                <tr>
+                    <td>201</td>
+                    <td>created</td>
+                    <td>La solicitud ha tenido éxito y se ha creado un nuevo recurso como resultado de ello</td>
+                </tr>
+                <tr>
+                    <td>202</td>
+                    <td>aceptedd</th>
+                    <td>La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente
+                        originalmente solicitada</td>
+                </tr>
+                <tr>
+                    <td>203</td>
+                    <td>no-authoritative information</td>
+                    <td>La petición se ha completado con éxito, pero su contenido no se ha obtenido de la fuente
+                        originalmente solicitada</td>
+                </tr>
+
+                <tr>
+                    <td>204</td>
+                    <td>no content</td>
+                    <td>La petición se ha completado con éxito pero su respuesta no tiene ningún contenido</td>
+                </tr>
+
+                <tr>
+                    <td>205</td>
+                    <td>rest content</td>
+                    <td>La petición se ha completado con éxito, pero su respuesta no tiene contenidos</td>
+                </tr>
+
+                <tr>
+                    <td>206</td>
+                    <td>partial content</td>
+                    <td>La petición servirá parcialmente el contenido solicitado</td>
+                </tr>
+                <tr>
+                    <td>207</td>
+                    <td>multi status</td>
+                    <td>Una respuesta Multi-Estado transmite información sobre varios recursos en situaciones en las que
+                        varios códigos de estado podrían ser apropiados</td>
+                </tr>
+
+                <tr>
+                    <td>208</td>
+                    <td>multi status</td>
+                    <td>El listado de elementos DAV ya se notificó previamente, por lo que no se van a volver a listar.
+                    </td>
+                </tr>
+                <tr>
+                    <td>226</td>
+                    <td>im Used</td>
+                    <td>El servidor ha cumplido una petición GET para el recurso y la respuesta es una representación
+                        del resultado de una o más manipulaciones de instancia aplicadas a la instancia actual.</td>
+                </tr>
+                <td rowspan="9"><strong>redirecciones(300-308)</strong></td>
+                <td>300</td>
+                <td>multiple choice</td>
+                <td>Esta solicitud tiene más de una posible respuesta. User-Agent o el usuario debe escoger uno de
+                    ellos. No hay forma estandarizada de seleccionar una de las respuestas.</td>
+                </tr>
+                <tr>
+                    <td>301</td>
+                    <td>moved permanently</td>
+                    <td>Este código de respuesta significa que la URI del recurso solicitado ha sido cambiado.
+                        Probablemente una nueva URI sea devuelta en la respuesta.</td>
+                </tr>
+                <tr>
+                    <td>302</td>
+                    <td>found</td>
+                    <td>Este código de respuesta significa que el recurso de la URI solicitada ha sido cambiado
+                        temporalmente. </td>
+                </tr>
+                <tr>
+                    <td>303</td>
+                    <td>see other</td>
+                    <td>El servidor envía esta respuesta para dirigir al cliente a un nuevo recurso solicitado a otra
+                        dirección usando una petición GET.</td>
+                </tr>
+                <tr>
+                    <td>304</td>
+                    <td>not modifie</td>
+                    <td>Esta es usada para propósitos de "caché". Le indica al cliente que la respuesta no ha sido
+                        modificada.</td>
+
+                </tr>
+
+                <tr>
+                    <td>305</td>
+                    <td>use proxy</td>
+                    <td>Fue definida en una versión previa de la especificación del protocolo HTTP para indicar que una
+                        respuesta solicitada debe ser accedida desde un proxy.</td>
+
+
+                </tr>
+                <tr>
+                    <td>306</td>
+                    <td>unused</td>
+                    <td>Este código de respuesta ya no es usado más. Actualmente se encuentra reservado. Fue usado en
+                        previas versiones de la especificación HTTP1.1.</td>
+                </tr>
+                <tr>
+                    <td>307</td>
+                    <td>temporary redirect</td>
+                    <td>El servidor envía esta respuesta para dirigir al cliente a obtener el recurso solicitado a otra
+                        URI con el mismo método que se usó la petición anterior.</td>
+                </tr>
+                <tr>
+                    <td>308</td>
+                    <td>permanent redirect</td>
+                    <td>Significa que el recurso ahora se encuentra permanentemente en otra URI, especificada por la
+                        respuesta de encabezado HTTP</td>
+                </tr>
+                <td rowspan="19"><strong>errores del cliente(400-451)</strong></td>
+                <tr>
+                    <td>400</td>
+                    <td>bad request</td>
+                    <td>Esta respuesta significa que el servidor no pudo interpretar la solicitud dada una sintaxis
+                        inválida.</td>
+                </tr>
+                <tr>
+                    <td>401</td>
+                    <td>anauthorized</td>
+                    <td>Es necesario autenticar para obtener la respuesta solicitada. Esta es similar a 403, pero en
+                        este caso, la autenticación es posible.</td>
+                </tr>
+
+                <tr>
+                    <td>402</td>
+                    <td>payment required</td>
+                    <td>Este código de respuesta está reservado para futuros usos. El objetivo inicial de crear este
+                        código fue para ser utilizado en sistemas digitales de pagos</td>
+                </tr>
+                <tr>
+                    <td>403</td>
+                    <td>forbidden</td>
+                    <td>El cliente no posee los permisos necesarios para cierto contenido, por lo que el servidor está
+                        rechazando otorgar una respuesta apropiada.</td>
+                </tr>
+                <tr>
+                    <td>404</td>
+                    <td>not found</td>
+                    <td>El servidor no pudo encontrar el contenido solicitado. Este código de respuesta es uno de los
+                        más famosos dada su alta ocurrencia en la web.</td>
+                </tr>
+                <tr>
+                    <td>405</td>
+                    <td>method not allowed</td>
+                    <td>El método solicitado es conocido por el servidor pero ha sido deshabilitado y no puede ser
+                        utilizado.</td>
+                </tr>
+                <tr>
+                    <td>406</td>
+                    <td>not aceptable</td>
+                    <td>Esta respuesta es enviada cuando el servidor, después de aplicar una negociación de contenido
+                        servidor-impulsado, no encuentra ningún contenido seguido por la criteria dada por el usuario.
+                    </td>
+                </tr>
+            </table>
+        </main>
+
+
+
+
+
+    </header>
+</body>
+
+</html>

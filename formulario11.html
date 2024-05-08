@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <header>
+
+
+
+        <h1>formulario</h1>
+
+    </header>
+    <main>
+        <!--formulario-->
+        <form action="" method="get"><!--definimos el destino donde iran los datos del formulario-->
+            <div>
+                <label for="nombre">nombre</label>
+                <input type="text" name="nombre" id="nombre" required>
+            </div>
+
+            <div>
+                <label for="apellido">apellido</label>
+                <input type="text" name="apellido" id="apellido" required>
+            </div>
+
+            <div>
+                <label for="correo electronico">correo electronico</label>
+                <input type="text" name="contraseña" id="contraseña" required>
+            </div>
+
+
+
+            <div>
+                <label for="fecha de nacimiento">fecha de nacimiento</label>
+                <input type="text" name="contraseña" id="contraseña" required>
+            </div>
+
+
+
+            <div>
+                <label for="dni">dni</label>
+                <input type="text" name="contraseña" id="contraseña" required>
+            </div>
+
+
+
+
+
+
+
+
+
+            <form action="/encuesta" method="post">
+                <label for="ocupacion">provincia:</label> <!-- el valor de for es el ID del select-->
+                <select id="ocupacion" name="ocupacion" required> <!-- selector de opciones -->
+                    <option value="">Selecciona una opción</option> <!-- no hay valor en el atributo value -->
+                    <option value="estudiante">tierra de fuego</option>
+                    <!-- aquí si hay valor en value, es lo que se manda al servidor: estudiante-->
+                    <option value="profesor">rio negro</option> <!-- valor enviado profesor-->
+                    <option value="trabajador">chubut</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">neuquen</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">la pampa</option> <!-- valor enviado trabajador -->
+
+                    <option value="profesor">buenos aires</option> <!-- valor enviado profesor-->
+                    <option value="trabajador">cordoba</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">corrientes</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">salta</option> <!-- valor enviado trabajador -->
+
+
+                    <option value="profesor">jujuy</option> <!-- valor enviado profesor-->
+                    <option value="trabajador">tucuman</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">formosa</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">san luis</option> <!-- valor enviado trabajador -->
+
+                    <option value="profesor">santiago del estero</option> <!-- valor enviado profesor-->
+                    <option value="trabajador">la rioja</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">santa cruz</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">santa fe</option> <!-- valor enviado trabajador -->
+
+                    <option value="profesor">entre rios</option> <!-- valor enviado profesor-->
+                    <option value="trabajador">san juan</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">catamarca</option> <!-- valor enviado trabajador -->
+                    <option value="trabajador">misiones</option> <!-- valor enviado trabajador -->
+
+
+
+
+
+
+
+
+
+
+                </select>
+
+
+                <label for="intereses">Intereses:</label>
+                <input type="checkbox" id="interes1" name="intereses" value="basquet"> <label
+                    for="interes1">basquet</label> <!-- uso de checkbox (cajas de verificación) -->
+                <input type="checkbox" id="interes2" name="intereses" value="voley"> <label for="interes2">voley</label>
+                <input type="checkbox" id="interes3" name="intereses" value="hockey"> <label
+                    for="interes3">hockey</label>
+
+                <input type="checkbox" id="interes3" name="intereses" value="futbol"> <label
+                    for="interes3">futbol</label>
+
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea> <!-- uso de textarea para escribir -->
+
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    </body< </html>

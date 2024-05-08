@@ -221,7 +221,7 @@
                     <td>Significa que el recurso ahora se encuentra permanentemente en otra URI, especificada por la
                         respuesta de encabezado HTTP</td>
                 </tr>
-                <td rowspan="19"><strong>errores del cliente(400-451)</strong></td>
+                <td rowspan="29"><strong>errores del cliente(400-451)</strong></td>
                 <tr>
                     <td>400</td>
                     <td>bad request</td>
@@ -264,6 +264,193 @@
                     <td>not aceptable</td>
                     <td>Esta respuesta es enviada cuando el servidor, después de aplicar una negociación de contenido
                         servidor-impulsado, no encuentra ningún contenido seguido por la criteria dada por el usuario.
+                    </td>
+                </tr>
+                <tr>
+                    <td>407</td>
+                    <td>proxy aunthentication required</td>
+                    <td>Esto es similar al código 401, pero la autenticación debe estar hecha a partir de un proxy.</td>
+                <tr>
+                    <td>408</td>
+                    <td>request timeout</td>
+                    <td>Esta respuesta es enviada en una conexión inactiva en algunos servidores, incluso sin alguna
+                        petición previa por el cliente.</td>
+                </tr>
+
+                <tr>
+                    <td>409</td>
+                    <td>conflict</td>
+                    <td>Esta respuesta puede ser enviada cuando una petición tiene conflicto con el estado actual del
+                        servidor.</td>
+                </tr>
+                <tr>
+                    <td>410</td>
+                    <td>gone</td>
+                    <td>Esta respuesta puede ser enviada cuando el contenido solicitado ha sido borrado del servidor
+                    </td>
+                </tr>
+                <tr>
+                    <td>411</td>
+                    <td>lenght required</td>
+                    <td>El servidor rechaza la petición porque el campo de encabezado Content-Length no esta definido y
+                        el servidor lo requiere.</td>
+                </tr>
+                <tr>
+                    <td>412</td>
+                    <td>precondition failed</td>
+                    <td>El cliente ha indicado pre-condiciones en sus encabezados la cual el servidor no cumple.</td>
+                </tr>
+                <tr>
+                    <td>413</td>
+                    <td>payload</td>
+                    <td> La entidad de petición es más larga que los límites definidos por el servidor; el servidor
+                        puede cerrar la conexión o retornar un campo de encabezado Retry-After.
+                        414 URI Too Long</td>
+                </tr>
+                <tr>
+                    <td>414</td>
+                    <td>uri too long</td>
+                    <td>la URI solicitada por el cliente es más larga de lo que el servidor está dispuesto a
+                        interpretar.</td>
+                </tr>
+                <tr>
+                    <td>415</td>
+                    <td>unspporter media type</td>
+                    <td>El formato multimedia de los datos solicitados no está soportado por el servidor, por lo cual el
+                        servidor rechaza la solicitud.</td>
+                </tr>
+
+                <tr>
+                    <td>416</td>
+                    <td>requested range no satisfiable</td>
+                    <td>l rango especificado por el campo de encabezado Range en la solicitud no cumple; es posible que
+                        el
+                        rango está fuera del tamaño de los datos objetivo del URI.</td>
+                </tr>
+                <tr>
+
+                    <td>417</td>
+                    <td>expectation failed</td>
+                    <td>Significa que la expectativa indicada por el campo de encabezado Expect solicitada no puede ser
+                        cumplida por el servidor.</td>
+                </tr>
+                <tr>
+                    <td>418</td>
+                    <td>i am teapot</td>
+                    <td>El servidor se rehúsa a intentar hacer café con una tetera.</td>
+                </tr>
+                <tr>
+                    <td>421</td>
+                    <td>missdirected request</td>
+                    <td>La petición fue dirigida a un servidor que no es capaz de producir una respuesta.</td>
+                </tr>
+                <tr>
+                    <td>422</td>
+                    <td>unprocessable entity</td>
+                    <td>La petición estaba bien formada pero no se pudo seguir debido a errores de semántica.</td>
+                </tr>
+                <tr>
+                    <td>423</td>
+                    <td>locked</td>
+                    <td>El recurso que está siendo accedido está bloqueado.</td>
+                </tr>
+
+                <tr>
+                    <td>424</td>
+                    <td>failed dependecy</td>
+                    <td>La petición falló debido a una falla de una petición previa</td>
+                </tr>
+
+                <tr>
+                    <td>426</td>
+                    <td>upgrade required</td>
+                    <td>El servidor se rehúsa a aplicar la solicitud usando el protocolo actual pero puede estar
+                        dispuesto a hacerlo después que el cliente se actualice a un protocolo diferente</td>
+                </tr>
+                <tr>
+                    <td>428</td>
+                    <td>precondition required</td>
+                    <td>El servidor origen requiere que la solicitud sea condicional.</td>
+                </tr>
+                <tr>
+                    <td>429</td>
+                    <td>to many request</td>
+                    <td>El usuario ha enviado demasiadas solicitudes en un periodo de tiempo dado.</td>
+                </tr>
+                <tr>
+                    <td>431</td>
+                    <td>request header fields too largue</td>
+                    <td>El servidor no está dispuesto a procesar la solicitud porque los campos de encabezado son
+                        demasiado largos</td>
+                </tr>
+                <tr>
+                    <td>451</td>
+                    <td>unavaviable for legas reason</td>
+                    <td>l usuario solicita un recurso ilegal, como alguna página web censurada por algún gobierno.</td>
+                </tr>
+
+                <td rowspan="12"><strong>errores del servidor (500-511)</strong></td>
+
+                <tr>
+                    <td>500</td>
+                    <td>internal server error</td>
+                    <td>El servidor ha encontrado una situación que no sabe cómo manejarla.</td>
+                </tr>
+                <tr>
+                    <td>501</td>
+                    <td>not implemented</td>
+                    <td>El método solicitado no está soportado por el servidor y no puede ser manejado</td>
+                </tr>
+                <tr>
+                    <td>502</td>
+                    <td>bad gateway</td>
+                    <td>Esta respuesta de error significa que el servidor, mientras trabaja como una puerta de enlace
+                        para obtener una respuesta necesaria para manejar la petición, obtuvo una respuesta inválida
+                    </td>
+                </tr>
+                <tr>
+                    <td>503</td>
+                    <td>service unavaviable</td>
+                    <td>El servidor no está listo para manejar la petición. Causas comunes puede ser que el servidor
+                        está caído por mantenimiento o está sobrecargado</td>
+                </tr>
+                <tr>
+                    <td>504</td>
+                    <td>gateway timeout</td>
+                    <td>Esta respuesta de error es dada cuando el servidor está actuando como una puerta de enlace y no
+                        puede obtener una respuesta a tiempo.</td>
+                </tr>
+                <tr>
+                    <td>505</td>
+                    <td>http version not supported</td>
+                    <td>La versión de HTTP usada en la petición no está soportada por el servidor.</td>
+                </tr>
+                <tr>
+                    <td>506</td>
+                    <td>variant also negotatias</td>
+                    <td>El servidor tiene un error de configuración interna: negociación de contenido transparente para
+                        la petición resulta en una referencia circular.</td>
+                </tr>
+                <tr>
+                    <td>507</td>
+                    <td>insufficient storage</td>
+                    <td>El servidor tiene un error de configuración interna</td>
+                </tr>
+                <tr>
+                    <td>508</td>
+                    <td>loop detected</td>
+                    <td>El servidor detectó un ciclo infinito mientras procesaba la solicitud.</td>
+
+                </tr>
+                <tr>
+                    <td>510</td>
+                    <td>not extended</td>
+                    <td> Extensiones adicionales para la solicitud son requeridas para que el servidor las cumpla.</td>
+                </tr>
+                <tr>
+                    <td>511</td>
+                    <td>network authentictation required</td>
+                    <td>El código de estado 511 indica que el cliente necesita autenticar para obtener acceso a la red
                     </td>
                 </tr>
             </table>
